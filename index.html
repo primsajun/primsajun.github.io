@@ -959,75 +959,40 @@
 								</div>
 								
 								<div class="form_wrapper">
-									<form   action="https://formspree.io/f/xzzdjnyg" method="POST">
-										<div class="error_box" id="empty-form">
-											<p>Please Fill Required Fields</p>
-										</div>
-										<div class="error_box" id="subject-alert">
-											<p>Please Select Subject</p>
-										</div>
-										<div class="error_box" id="security-alert">
-											<p>Security code does not match !</p>
-										</div>
-										<div class="error_box" id="email-invalid">
-											<p>Please enter a valid email address. Exp. example@gmail.com</p>
-										</div>
-										<div class="error_box" id="phone-invalid">
-											<p>Please enter a valid phone number.Exp. +998994425557</p>
-										</div>
-										<div class="error_box" id="error_mail">
-											<p></p>
-										</div>
-										<div class="success_box" id="success_mail">
-											<p>Your message has been sent. We will contact you as soon as possible.</p>
-										</div>
-										<ul>
-											<li>
-												<input type="text" placeholder="Name" name="contact_name"
-													class="cf-form-control">
-												<span></span>
-											</li>
-											<li>
-												<input type="text" placeholder="Email" name="contact_email"
-													class="cf-form-control">
-												<span></span>
-											</li>
-											<li>
-												<input type="text" placeholder="Phone" name="contact_phone"
-													class="cf-form-control">
-												<span></span>
-											</li>
-											<li>
-												<select name="contact_subject" class="cf-form-control colored">
-													<option value="Choose Services">Choose Service</option>
-													<option value="Web Development">Web Development</option>
-											
-													<option value="UI/UX Design">Web Design</option>
-												</select>
-											</li>
-											<li id="text-area-w">
-												<textarea placeholder="Message" name="contact_message"
-													class="cf-form-control"></textarea>
-											</li>
-											<li id="enter_code">
-												<span id="txtCaptchaSpan">29319</span>
-												<input type="text" class="cf-form-control" name="contact_question"
-													id="txtInput" autocomplete="off" placeholder="Please Enter Code *">
-												<input type="hidden" id="txtCaptcha" value="29319">
-											</li>
-										</ul>
-										<div class="arlo_tm_button">
-											<a href="#" id="send_message">
-												<span class="back">Send Message</span>
-												<span class="front">Send Message</span>
-											</a>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                    <form action="https://formspree.io/f/xzzdjnyg" method="POST">
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="Name" name="name" class="cf-form-control" required>
+                            </li>
+                            <li>
+                                <input type="email" placeholder="Email" name="email" class="cf-form-control" required>
+                            </li>
+                            <li>
+                                <input type="tel" placeholder="Phone" name="phone" class="cf-form-control">
+                            </li>
+                            <li>
+                                <select name="subject" class="cf-form-control colored" required>
+                                    <option value="" disabled selected>Choose Service</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Web Design">Web Design</option>
+                                </select>
+                            </li>
+                            <li>
+                                <textarea placeholder="Message" name="message" class="cf-form-control" required></textarea>
+                            </li>
+                        </ul>
+                        <div class="arlo_tm_button">
+                            <button type="submit">
+                                <span class="back">Send Message</span>
+                                <span class="front">Send Message</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 			</div>
 			<span class="left_border"></span><span class="right_border"></span><span class="top_border"></span><span
